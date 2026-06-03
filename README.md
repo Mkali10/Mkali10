@@ -1,103 +1,99 @@
-# Hi 👋, I'm Ankit Vishwakarma
+<h1 align="center">Hi 👋, I'm Ankit Vishwakarma</h1>
 
-### ☎️ VoIP Engineer | 🐧 Linux Administrator | ☁️ Cloud & DevOps Enthusiast | 🤖 AI Integration Engineer
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00C853&center=true&vCenter=true&width=700&lines=VoIP+Engineer;Linux+Administrator;Cloud+%26+DevOps+Engineer;AI+Integration+Specialist;Automation+Enthusiast" />
+</p>
 
-Passionate Infrastructure Engineer with expertise in VoIP Systems, Linux Administration, Cloud Infrastructure, Network Security, DevOps Automation, and AI-powered solutions. I enjoy building scalable communication systems, automating workflows, and solving complex infrastructure challenges.
+<p align="center">
+  <a href="https://github.com/Mkali10">
+    <img src="https://komarev.com/ghpvc/?username=Mkali10&label=Profile+Views&color=0e75b6&style=for-the-badge" />
+  </a>
+</p>
 
 ---
 
 ## 🚀 About Me
 
-* 🔭 Currently working on VoIP Infrastructure & Linux Administration
-* 🌱 Learning AI Agents, RAG Systems, DevOps Automation & Cloud Technologies
-* 👯 Open to collaborate on Open Source, VoIP, DevOps & AI Projects
-* 💬 Ask me about Asterisk, FreePBX, Linux, AWS, Docker, Nginx & AI Integrations
-* ⚡ Passionate about Automation, Monitoring & Infrastructure Optimization
+🔹 VoIP Infrastructure & Telephony Expert
+
+🔹 Linux System Administration & Hardening
+
+🔹 AWS Cloud & Virtualization
+
+🔹 Docker & DevOps Automation
+
+🔹 Grafana Monitoring & Observability
+
+🔹 AI Agents & RAG Applications
+
+🔹 OpenAI API Integrations
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ Tech Arsenal
 
-### ☎️ VoIP & Telephony
+<p align="center">
 
-![Asterisk](https://img.shields.io/badge/Asterisk-FFC107?style=for-the-badge)
-![FreePBX](https://img.shields.io/badge/FreePBX-0078D4?style=for-the-badge)
-![SIP](https://img.shields.io/badge/SIP-28A745?style=for-the-badge)
-![VoIP](https://img.shields.io/badge/VoIP-00C853?style=for-the-badge)
+<img src="https://skillicons.dev/icons?i=linux,ubuntu,debian,aws,docker,git,github,nginx,bash,python"/>
 
-### 🐧 Linux Administration
+</p>
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge\&logo=debian\&logoColor=white)
-![Rocky Linux](https://img.shields.io/badge/RockyLinux-10B981?style=for-the-badge)
-![Bash](https://img.shields.io/badge/Bash_Scripting-121011?style=for-the-badge\&logo=gnubash)
+### ☎️ VoIP Stack
 
-### ☁️ Cloud & Virtualization
+`Asterisk` `FreePBX` `SIP` `RTP` `SRTP` `Dialplan`
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazonaws)
-![OpenStack](https://img.shields.io/badge/OpenStack-ED1944?style=for-the-badge\&logo=openstack)
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge)
-![VMware](https://img.shields.io/badge/VMware-607078?style=for-the-badge)
+### ☁️ Infrastructure
 
-### 🚀 DevOps & Automation
+`AWS` `OpenStack` `Proxmox` `VMware`
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge\&logo=github-actions)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge\&logo=nginx)
+### 📊 Monitoring
 
-### 📊 Monitoring & Observability
+`Grafana` `Prometheus` `Zabbix`
 
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge\&logo=grafana)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge\&logo=prometheus)
+### 🤖 AI Stack
 
-### 🤖 AI & Automation
-
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge)
-![AI Agents](https://img.shields.io/badge/AI_Agents-FF6F00?style=for-the-badge)
-![RAG](https://img.shields.io/badge/RAG-00C853?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python)
+`OpenAI API`
+`AI Agents`
+`RAG Systems`
+`Python Automation`
 
 ---
 
-## 🎯 Core Expertise
+## 📈 GitHub Analytics
 
-* ☎️ Enterprise VoIP Infrastructure
-* 🐧 Linux Server Administration
-* ☁️ AWS & Cloud Infrastructure
-* 🚀 Docker & GitHub Actions
-* 📊 Grafana Monitoring Solutions
-* 🔒 Network Security & Performance Tuning
-* 🤖 AI Agents & RAG Systems
-* 🌐 Nginx Reverse Proxy & Load Balancing
+<p align="center">
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Mkali10&show_icons=true&theme=tokyonight"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mkali10&layout=compact&theme=tokyonight"/>
+</p>
 
----
-
-## 📈 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mkali10\&show_icons=true\&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mkali10\&layout=compact\&theme=tokyonight)
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mkali10&theme=tokyonight"/>
+</p>
 
 ---
 
-## 🏆 Professional Highlights
+## 🏆 GitHub Trophies
 
-* 🚀 Designed and Managed VoIP Infrastructure
-* ☁️ Deployed Cloud-Based Solutions on AWS
-* 🐧 Administered Linux Production Servers
-* 📊 Implemented Monitoring with Grafana
-* 🤖 Built AI Integrations using OpenAI APIs
-* 🔒 Performed Security Hardening & VAPT Remediation
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=Mkali10&theme=tokyonight&row=1&column=7"/>
+</p>
 
 ---
 
-## 🤝 Connect With Me
+## 🌐 Connect With Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge\&logo=linkedin)](https://linkedin.com/in/ankitvishwa)
+<p align="center">
+<a href="https://linkedin.com/in/ankitvishwa">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/Mkali10)
+<a href="https://github.com/Mkali10">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+</p>
 
 ---
 
-⭐ Thanks for visiting my profile! Feel free to explore my repositories and connect with me.
+<p align="center">
+⚡ Building Reliable Infrastructure | Automating Everything | Exploring AI ⚡
+</p>
