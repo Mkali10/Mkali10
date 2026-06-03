@@ -1,75 +1,110 @@
-<h1 align="center">Hi 👋, I'm Ankit Vishwa</h1>
+<div align="center">
 
-<p align="center">
-Linux Administrator • VoIP Engineer • Infrastructure & Automation
-</p>
+# Ankit Vishwa
 
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=Mkali10&label=Profile+Views&color=blue&style=flat-square" />
-</p>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=26&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=800&lines=VoIP+Engineer;Linux+Administrator;Infrastructure+%26+Automation;Exploring+AI+Agents+and+RAG" />
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=Mkali10&label=Profile+Views&color=0e75b6&style=for-the-badge" />
+
+</div>
 
 ---
 
-Linux Administrator and VoIP Engineer with experience in managing communication systems, Linux servers, networking, and infrastructure services.
+## About
 
-Currently exploring automation, cloud technologies, monitoring solutions, and practical AI integrations.
+```bash
+$ whoami
+
+Name      : Ankit Vishwakarma
+Role      : VoIP Engineer / Linux Administrator
+Focus     : Infrastructure, Networking, Automation
+Learning  : AI Agents, RAG Systems, Cloud Technologies
+```
 
 ---
 
 ## Tech Stack
 
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=linux,ubuntu,debian,aws,docker,nginx,git,github,python,bash,vscode" />
+
+</p>
+
+---
+
 ### VoIP & Telephony
 
-![Asterisk](https://img.shields.io/badge/Asterisk-FCC624?style=for-the-badge)
-![FreePBX](https://img.shields.io/badge/FreePBX-0052CC?style=for-the-badge)
-![SIP](https://img.shields.io/badge/SIP-0A66C2?style=for-the-badge)
+Asterisk • FreePBX • SIP • RTP • SRTP
 
-### Linux & Infrastructure
+### Infrastructure & Cloud
 
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge\&logo=ubuntu\&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge\&logo=debian\&logoColor=white)
-![Rocky Linux](https://img.shields.io/badge/RockyLinux-10B981?style=for-the-badge)
+AWS • OpenStack • Proxmox • VMware
 
-### Cloud & Virtualization
+### Monitoring
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazonaws)
-![OpenStack](https://img.shields.io/badge/OpenStack-ED1944?style=for-the-badge\&logo=openstack)
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge)
+Grafana • Prometheus • Zabbix • Loki
 
-### Monitoring & Automation
+### Automation
 
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge\&logo=grafana)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge\&logo=prometheus)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge\&logo=github-actions)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge\&logo=nginx)
-
-### Programming
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python)
-![Bash](https://img.shields.io/badge/Bash-121011?style=for-the-badge\&logo=gnubash)
+Docker • GitHub Actions • Bash • Python
 
 ---
 
-## Currently Learning
+## GitHub Stats
 
-* AI Agents
-* RAG Systems
-* Infrastructure Automation
-* Monitoring & Observability
+<p align="center">
+<img width="48%" src="https://github-readme-stats.vercel.app/api?username=Mkali10&show_icons=true&theme=tokyonight&hide_border=true" />
+<img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mkali10&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
-## GitHub Activity
+## Activity
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Mkali10\&show_icons=true\&theme=transparent)
+<p align="center">
+<img src="https://streak-stats.demolab.com?user=Mkali10&theme=tokyonight&hide_border=true" />
+</p>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Mkali10\&layout=compact\&theme=transparent)
+---
+
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mkali10&theme=tokyo-night&hide_border=true" />
+</p>
+
+---
+
+## Focus Areas
+
+Infrastructure Automation
+Linux System Engineering
+VoIP Platforms
+Cloud Deployments
+Monitoring & Observability
+AI Integrations
 
 ---
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin)](https://linkedin.com/in/ankitvishwa)
+<p align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/Mkali10)
+<a href="https://linkedin.com/in/ankitvishwa">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
+</a>
+
+<a href="https://github.com/Mkali10">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github" />
+</a>
+
+</p>
+
+---
+
+<div align="center">
+
+Building reliable infrastructure and scalable systems.
+
+</div>
