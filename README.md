@@ -1,566 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ankit Vishwa — VoIP Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
-<style>
-  :root {
-    --bg: #050a0f;
-    --surface: #0a1520;
-    --surface2: #0f1e2e;
-    --border: #1a3a55;
-    --accent: #00d4ff;
-    --accent2: #00ff9d;
-    --accent3: #ff6b35;
-    --text: #e0f0ff;
-    --muted: #5a8aaa;
-    --card-bg: rgba(10,25,40,0.8);
-  }
+<div align="center">
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050a0f,40:003d5c,70:00d4ff,100:00ff9d&height=220&section=header&text=ANKIT%20VISHWAKARMA&fontSize=54&fontColor=ffffff&fontAlignY=40&desc=VoIP%20Engineer%20%2F%20Linux%20Administrator%20%2F%20Infrastructure&descSize=15&descAlignY=62&descColor=a0d8ef&animation=fadeIn&fontFamily=monospace" />
 
-  html { scroll-behavior: smooth; }
+<br/>
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Space Mono', monospace;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=900&color=00D4FF&center=true&vCenter=true&width=720&lines=%24+building+reliable+infrastructure+%F0%9F%94%A7;%24+managing+VoIP+systems+%F0%9F%93%9E;%24+automating+everything+with+Bash+%26+Python+%F0%9F%90%8D;%24+exploring+AI+Agents+%26+RAG+Systems+%F0%9F%A4%96;%24+uptime%3A+99.9%25+%E2%9C%85)](https://git.io/typing-svg)
 
-  /* ── BACKGROUND GRID ── */
-  .grid-bg {
-    position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    background-image:
-      linear-gradient(rgba(0,212,255,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,212,255,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
-    animation: gridDrift 20s linear infinite;
-  }
-  @keyframes gridDrift { to { background-position: 40px 40px; } }
+<br/>
 
-  /* ── SCANLINES ── */
-  .scanlines {
-    position: fixed; inset: 0; z-index: 1; pointer-events: none;
-    background: repeating-linear-gradient(
-      to bottom,
-      transparent 0px, transparent 3px,
-      rgba(0,0,0,0.08) 3px, rgba(0,0,0,0.08) 4px
-    );
-  }
-
-  /* ── NOISE ── */
-  .noise {
-    position: fixed; inset: 0; z-index: 2; pointer-events: none; opacity: 0.025;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    background-size: 200px;
-    animation: noiseShift 0.5s steps(1) infinite;
-  }
-  @keyframes noiseShift {
-    0%  { background-position: 0 0; }
-    25% { background-position: -10px 5px; }
-    50% { background-position: 5px -10px; }
-    75% { background-position: -5px -5px; }
-  }
-
-  /* ── FLOATING ORBS ── */
-  .orbs { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-  .orb {
-    position: absolute; border-radius: 50%;
-    filter: blur(80px); opacity: 0.12;
-    animation: orbFloat var(--dur, 20s) ease-in-out infinite alternate;
-  }
-  .orb1 { width:500px;height:500px; background:var(--accent);  top:-100px; left:-100px; --dur:18s; }
-  .orb2 { width:400px;height:400px; background:var(--accent2); bottom:-80px; right:-80px; --dur:22s; }
-  .orb3 { width:300px;height:300px; background:var(--accent3); top:50%; left:50%; --dur:15s; }
-  @keyframes orbFloat {
-    from { transform: translate(0,0) scale(1); }
-    to   { transform: translate(40px, 40px) scale(1.1); }
-  }
-
-  /* ── WRAPPER ── */
-  .wrapper {
-    position: relative; z-index: 10;
-    max-width: 900px; margin: 0 auto;
-    padding: 80px 24px 120px;
-  }
-
-  /* ── HERO ── */
-  .hero { text-align: center; margin-bottom: 80px; }
-
-  .hero-tag {
-    display: inline-block;
-    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
-    color: var(--accent2);
-    border: 1px solid rgba(0,255,157,0.3);
-    padding: 6px 16px; border-radius: 2px;
-    margin-bottom: 28px;
-    animation: fadeUp 0.8s ease both;
-  }
-
-  .hero-name {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(52px, 9vw, 92px);
-    font-weight: 800;
-    line-height: 0.95;
-    letter-spacing: -3px;
-    margin-bottom: 24px;
-    animation: fadeUp 0.8s ease 0.15s both;
-  }
-  .hero-name .line1 { display: block; color: var(--text); }
-  .hero-name .line2 {
-    display: block;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .hero-subtitle {
-    font-size: 13px; letter-spacing: 3px; color: var(--muted);
-    text-transform: uppercase; margin-bottom: 40px;
-    animation: fadeUp 0.8s ease 0.3s both;
-  }
-
-  /* ── TYPEWRITER ── */
-  .typewriter-wrap {
-    display: inline-flex; align-items: center; gap: 10px;
-    border: 1px solid var(--border);
-    background: var(--card-bg); backdrop-filter: blur(12px);
-    padding: 12px 24px; border-radius: 4px;
-    font-size: 13px; color: var(--accent);
-    animation: fadeUp 0.8s ease 0.45s both;
-  }
-  .tw-prompt { color: var(--accent2); }
-  .tw-cursor {
-    width: 8px; height: 16px;
-    background: var(--accent);
-    display: inline-block;
-    animation: blink 1s step-end infinite;
-  }
-  @keyframes blink { 50% { opacity: 0; } }
-
-  /* ── SECTION ── */
-  .section { margin-bottom: 64px; }
-  .section-label {
-    display: flex; align-items: center; gap: 16px;
-    font-size: 10px; letter-spacing: 5px; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 28px;
-  }
-  .section-label::after {
-    content: ''; flex: 1; height: 1px;
-    background: linear-gradient(to right, var(--border), transparent);
-  }
-  .section-label .num { color: var(--accent); font-size: 11px; }
-
-  /* ── WHOAMI TERMINAL ── */
-  .terminal {
-    background: rgba(5,15,25,0.9);
-    border: 1px solid var(--border);
-    border-radius: 8px; overflow: hidden;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 60px rgba(0,212,255,0.08);
-    opacity: 0; transform: translateY(20px);
-    transition: all 0.6s ease;
-  }
-  .terminal.visible { opacity: 1; transform: none; }
-
-  .term-bar {
-    display: flex; align-items: center; gap: 8px;
-    padding: 12px 16px;
-    background: rgba(255,255,255,0.03);
-    border-bottom: 1px solid var(--border);
-  }
-  .dot { width:12px;height:12px;border-radius:50%; }
-  .dot.r { background:#ff5f57; }
-  .dot.y { background:#febc2e; }
-  .dot.g { background:#28c840; }
-  .term-title { font-size:11px; color:var(--muted); margin-left:auto; margin-right:auto; }
-
-  .term-body { padding: 20px 24px; }
-  .term-line { display:flex; gap:10px; line-height:1.8; font-size:13px; }
-  .term-line .ps { color: var(--accent2); white-space: nowrap; }
-  .term-line .cmd { color: var(--accent); }
-  .term-line .key { color: var(--muted); }
-  .term-line .val { color: var(--text); }
-  .term-line .sep { color: var(--border); }
-  .term-output { padding: 8px 0; }
-  .term-row { display:grid; grid-template-columns:120px 1fr; gap:16px; padding:3px 0; font-size:13px; }
-  .term-row .k { color: var(--accent); }
-  .term-row .v { color: var(--text); }
-
-  /* ── STACK GRID ── */
-  .stack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
-  }
-  .stack-item {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 16px;
-    backdrop-filter: blur(12px);
-    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    cursor: default;
-    opacity: 0; transform: translateY(16px);
-    transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.3s, box-shadow 0.3s;
-  }
-  .stack-item.visible { opacity: 1; transform: none; }
-  .stack-item:hover {
-    border-color: var(--accent);
-    transform: translateY(-4px);
-    box-shadow: 0 0 30px rgba(0,212,255,0.12);
-  }
-  .si-icon { font-size: 20px; margin-bottom: 8px; }
-  .si-name { font-size: 11px; font-weight: 700; color: var(--text); letter-spacing: 1px; }
-  .si-cat { font-size: 10px; color: var(--muted); margin-top: 4px; }
-
-  /* ── FOCUS AREAS ── */
-  .focus-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 16px;
-  }
-  .focus-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent);
-    border-radius: 6px; padding: 20px 22px;
-    backdrop-filter: blur(12px);
-    transition: all 0.3s;
-    opacity: 0; transform: translateX(-12px);
-    transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.3s, box-shadow 0.3s;
-  }
-  .focus-card.visible { opacity: 1; transform: none; }
-  .focus-card:nth-child(2n) { border-left-color: var(--accent2); }
-  .focus-card:nth-child(3n) { border-left-color: var(--accent3); }
-  .focus-card:hover { box-shadow: 0 0 30px rgba(0,212,255,0.1); transform: translateX(4px); }
-  .fc-title { font-size: 13px; font-weight: 700; font-family:'Syne',sans-serif; margin-bottom: 6px; color:var(--text); }
-  .fc-desc  { font-size: 11px; color: var(--muted); line-height: 1.7; }
-
-  /* ── CONNECT ── */
-  .connect-row { display: flex; gap: 16px; flex-wrap: wrap; }
-  .connect-btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 14px 28px;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--text);
-    background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    transition: all 0.3s;
-    position: relative; overflow: hidden;
-  }
-  .connect-btn::before {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    opacity: 0; transition: opacity 0.3s;
-  }
-  .connect-btn:hover::before { opacity: 0.15; }
-  .connect-btn:hover { border-color: var(--accent); box-shadow: 0 0 30px rgba(0,212,255,0.2); transform: translateY(-2px); }
-  .connect-btn span { position: relative; z-index: 1; }
-
-  /* ── STATS CARDS ── */
-  .stats-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
-  .stat-card {
-    background: var(--card-bg); border: 1px solid var(--border);
-    border-radius: 6px; padding: 20px;
-    text-align: center; backdrop-filter: blur(12px);
-    opacity: 0; transform: scale(0.95);
-    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s;
-  }
-  .stat-card.visible { opacity: 1; transform: none; }
-  .stat-card:hover { box-shadow: 0 0 40px rgba(0,212,255,0.15); }
-  .stat-num { font-family:'Syne',sans-serif; font-size: 36px; font-weight:800; color:var(--accent); line-height:1; }
-  .stat-label { font-size: 10px; color: var(--muted); letter-spacing: 3px; text-transform:uppercase; margin-top:8px; }
-
-  /* ── FOOTER ── */
-  .footer {
-    text-align: center; margin-top: 80px; padding-top: 40px;
-    border-top: 1px solid var(--border);
-    font-size: 11px; color: var(--muted); letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-  .footer .accent { color: var(--accent2); }
-
-  /* ── PULSE DOT ── */
-  .pulse-dot {
-    display: inline-block; width:8px;height:8px;
-    background:var(--accent2); border-radius:50%;
-    margin-right:8px;
-    box-shadow: 0 0 0 0 rgba(0,255,157,0.4);
-    animation: pulse 2s ease infinite;
-  }
-  @keyframes pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(0,255,157,0.4); }
-    70%  { box-shadow: 0 0 0 8px rgba(0,255,157,0); }
-    100% { box-shadow: 0 0 0 0 rgba(0,255,157,0); }
-  }
-
-  @keyframes fadeUp {
-    from { opacity:0; transform: translateY(24px); }
-    to   { opacity:1; transform: none; }
-  }
-
-  /* ── GLITCH ── */
-  .glitch {
-    position: relative;
-  }
-  .glitch::before, .glitch::after {
-    content: attr(data-text);
-    position: absolute; top:0; left:0; width:100%;
-    font-family:'Syne',sans-serif; font-weight:800;
-    font-size: inherit; letter-spacing: inherit; line-height: inherit;
-  }
-  .glitch::before {
-    color: var(--accent); clip: rect(44px, 900px, 56px, 0);
-    animation: glitchTop 3s linear infinite;
-    opacity: 0.7;
-  }
-  .glitch::after {
-    color: var(--accent3); clip: rect(80px, 900px, 90px, 0);
-    animation: glitchBot 4s linear infinite;
-    opacity: 0.7;
-  }
-  @keyframes glitchTop {
-    0%,95%,100% { clip:rect(0,0,0,0); transform:none; }
-    96%  { clip:rect(20px,900px,28px,0); transform:translate(-2px); }
-    97%  { clip:rect(55px,900px,65px,0); transform:translate(2px); }
-    98%  { clip:rect(10px,900px,18px,0); transform:translate(-1px); }
-    99%  { clip:rect(40px,900px,50px,0); transform:translate(1px); }
-  }
-  @keyframes glitchBot {
-    0%,92%,100% { clip:rect(0,0,0,0); transform:none; }
-    93%  { clip:rect(70px,900px,80px,0); transform:translate(2px); }
-    94%  { clip:rect(30px,900px,40px,0); transform:translate(-2px); }
-    95%  { clip:rect(60px,900px,70px,0); transform:translate(1px); }
-  }
-</style>
-</head>
-<body>
-
-<div class="grid-bg"></div>
-<div class="scanlines"></div>
-<div class="noise"></div>
-<div class="orbs">
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="orb orb3"></div>
-</div>
-
-<div class="wrapper">
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-tag"><span class="pulse-dot"></span>Available for Projects</div>
-    <h1 class="hero-name">
-      <span class="line1 glitch" data-text="ANKIT">ANKIT</span>
-      <span class="line2">VISHWAKARMA</span>
-    </h1>
-    <p class="hero-subtitle">VoIP Engineer &nbsp;/&nbsp; Linux Administrator &nbsp;/&nbsp; Infrastructure</p>
-    <div class="typewriter-wrap">
-      <span class="tw-prompt">$</span>
-      <span id="typewriter"></span>
-      <span class="tw-cursor"></span>
-    </div>
-  </header>
-
-  <!-- WHOAMI -->
-  <section class="section">
-    <div class="section-label"><span class="num">01</span> System Info</div>
-    <div class="terminal" id="terminal">
-      <div class="term-bar">
-        <span class="dot r"></span>
-        <span class="dot y"></span>
-        <span class="dot g"></span>
-        <span class="term-title">bash — ankit@server:~</span>
-      </div>
-      <div class="term-body">
-        <div class="term-line">
-          <span class="ps">ankit@server:~$</span>
-          <span class="cmd">whoami --verbose</span>
-        </div>
-        <div class="term-output">
-          <div class="term-row"><span class="k">Name</span><span class="v">Ankit Vishwakarma</span></div>
-          <div class="term-row"><span class="k">Role</span><span class="v">VoIP Engineer / Linux Administrator</span></div>
-          <div class="term-row"><span class="k">Focus</span><span class="v">Infrastructure, Networking, Automation</span></div>
-          <div class="term-row"><span class="k">Learning</span><span class="v">AI Agents · RAG Systems · Cloud Technologies</span></div>
-          <div class="term-row"><span class="k">Status</span><span class="v"><span class="pulse-dot"></span>Active &amp; Building</span></div>
-        </div>
-        <div class="term-line" style="margin-top:12px;">
-          <span class="ps">ankit@server:~$</span>
-          <span class="tw-cursor" style="animation-delay:0.5s;"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section class="section">
-    <div class="section-label"><span class="num">02</span> Quick Stats</div>
-    <div class="stats-row">
-      <div class="stat-card" data-anim>
-        <div class="stat-num" data-target="5">0</div>
-        <div class="stat-label">Years Experience</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-num" data-target="30">0</div>
-        <div class="stat-label">Projects Deployed</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-num" data-target="12">0</div>
-        <div class="stat-label">Technologies</div>
-      </div>
-      <div class="stat-card" data-anim>
-        <div class="stat-num" data-target="99">0</div>
-        <div class="stat-label">Uptime %</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STACK -->
-  <section class="section">
-    <div class="section-label"><span class="num">03</span> Tech Stack</div>
-    <div class="stack-grid" id="stack-grid">
-      <!-- VoIP -->
-      <div class="stack-item" data-anim><div class="si-icon">📞</div><div class="si-name">Asterisk</div><div class="si-cat">VoIP</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">☎️</div><div class="si-name">FreePBX</div><div class="si-cat">VoIP</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🔗</div><div class="si-name">SIP / RTP</div><div class="si-cat">Protocols</div></div>
-      <!-- Infra -->
-      <div class="stack-item" data-anim><div class="si-icon">🐧</div><div class="si-name">Linux</div><div class="si-cat">OS</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">☁️</div><div class="si-name">AWS</div><div class="si-cat">Cloud</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🖥️</div><div class="si-name">Proxmox</div><div class="si-cat">Virtualization</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🐳</div><div class="si-name">Docker</div><div class="si-cat">Containers</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🌐</div><div class="si-name">Nginx</div><div class="si-cat">Web Server</div></div>
-      <!-- Monitoring -->
-      <div class="stack-item" data-anim><div class="si-icon">📊</div><div class="si-name">Grafana</div><div class="si-cat">Monitoring</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🔥</div><div class="si-name">Prometheus</div><div class="si-cat">Metrics</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">👁️</div><div class="si-name">Zabbix</div><div class="si-cat">Monitoring</div></div>
-      <!-- Dev -->
-      <div class="stack-item" data-anim><div class="si-icon">🐍</div><div class="si-name">Python</div><div class="si-cat">Automation</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">🔧</div><div class="si-name">Bash</div><div class="si-cat">Scripting</div></div>
-      <div class="stack-item" data-anim><div class="si-icon">⚙️</div><div class="si-name">GitHub Actions</div><div class="si-cat">CI/CD</div></div>
-    </div>
-  </section>
-
-  <!-- FOCUS -->
-  <section class="section">
-    <div class="section-label"><span class="num">04</span> Focus Areas</div>
-    <div class="focus-grid">
-      <div class="focus-card" data-anim>
-        <div class="fc-title">Infrastructure Automation</div>
-        <div class="fc-desc">Streamlining deployments with IaC, CI/CD pipelines, and scripted provisioning across hybrid environments.</div>
-      </div>
-      <div class="focus-card" data-anim>
-        <div class="fc-title">VoIP Platforms</div>
-        <div class="fc-desc">Designing and maintaining Asterisk & FreePBX systems with SIP trunking, IVR flows, and SRTP encryption.</div>
-      </div>
-      <div class="focus-card" data-anim>
-        <div class="fc-title">Linux Engineering</div>
-        <div class="fc-desc">Deep system-level configuration, performance tuning, and hardening on Ubuntu/Debian production servers.</div>
-      </div>
-      <div class="focus-card" data-anim>
-        <div class="fc-title">Monitoring & Observability</div>
-        <div class="fc-desc">Full-stack visibility with Prometheus, Grafana, Loki &amp; Zabbix — alerting before things break.</div>
-      </div>
-      <div class="focus-card" data-anim>
-        <div class="fc-title">Cloud Deployments</div>
-        <div class="fc-desc">Architecting resilient workloads on AWS &amp; OpenStack; multi-zone, autoscaling, cost-aware.</div>
-      </div>
-      <div class="focus-card" data-anim>
-        <div class="fc-title">AI Integrations</div>
-        <div class="fc-desc">Exploring RAG pipelines and AI agents to bring intelligent automation into infrastructure workflows.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONNECT -->
-  <section class="section">
-    <div class="section-label"><span class="num">05</span> Connect</div>
-    <div class="connect-row">
-      <a href="https://linkedin.com/in/ankitvishwa" class="connect-btn" target="_blank">
-        <span>in</span>
-        <span>LinkedIn</span>
-      </a>
-      <a href="https://github.com/Mkali10" class="connect-btn" target="_blank">
-        <span>⌥</span>
-        <span>GitHub</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>Building reliable infrastructure &amp; scalable systems <span class="accent">_</span></p>
-    <p style="margin-top:12px; font-size:10px; opacity:0.4;">© 2025 Ankit Vishwakarma</p>
-  </footer>
+![Profile Views](https://komarev.com/ghpvc/?username=Mkali10&label=PROFILE+VIEWS&color=00d4ff&style=for-the-badge)
+&nbsp;&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/Mkali10?label=FOLLOWERS&style=for-the-badge&color=00ff9d&labelColor=0a1520)](https://github.com/Mkali10)
+&nbsp;&nbsp;
+![Status](https://img.shields.io/badge/STATUS-ACTIVE%20%26%20BUILDING-00ff9d?style=for-the-badge&labelColor=0a1520)
 
 </div>
 
-<script>
-// ── TYPEWRITER ──
-const lines = [
-  'building reliable infra...',
-  'managing VoIP systems...',
-  'automating everything...',
-  'exploring AI agents...',
-  'uptime: 99.9%',
-];
-let li = 0, ci = 0, deleting = false;
-const el = document.getElementById('typewriter');
-function type() {
-  const line = lines[li];
-  if (!deleting) {
-    el.textContent = line.slice(0, ++ci);
-    if (ci === line.length) { deleting = true; setTimeout(type, 1800); return; }
-  } else {
-    el.textContent = line.slice(0, --ci);
-    if (ci === 0) { deleting = false; li = (li + 1) % lines.length; setTimeout(type, 400); return; }
-  }
-  setTimeout(type, deleting ? 40 : 70);
-}
-type();
+---
 
-// ── INTERSECTION OBSERVER ──
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const el = e.target;
-      el.classList.add('visible');
-      // counter animation for stat cards
-      const numEl = el.querySelector('[data-target]');
-      if (numEl) {
-        const target = +numEl.dataset.target;
-        let current = 0;
-        const step = Math.ceil(target / 40);
-        const t = setInterval(() => {
-          current = Math.min(current + step, target);
-          numEl.textContent = current + (target === 99 ? '%' : '+');
-          if (current >= target) clearInterval(t);
-        }, 30);
-      }
-      io.unobserve(el);
-    }
-  });
-}, { threshold: 0.15 });
+## `$ whoami --verbose`
 
-document.querySelectorAll('[data-anim], .terminal, .focus-card, .stat-card, .stack-item').forEach(el => {
-  io.observe(el);
-});
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│   Name      :  Ankit Vishwakarma                            │
+│   Role      :  VoIP Engineer / Linux Administrator          │
+│   Focus     :  Infrastructure · Networking · Automation     │
+│   Learning  :  AI Agents · RAG Systems · Cloud Technologies │
+│   Status    :  ● Active & Building                          │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
-// stagger stack items
-document.querySelectorAll('.stack-item').forEach((el, i) => {
-  el.style.transitionDelay = (i * 0.05) + 's';
-});
+---
 
-// stagger focus cards
-document.querySelectorAll('.focus-card').forEach((el, i) => {
-  el.style.transitionDelay = (i * 0.08) + 's';
-});
-</script>
-</body>
-</html>
+## `$ cat /etc/tech-stack.conf`
+
+<br/>
+
+**📞 VoIP & Telephony**
+
+![Asterisk](https://img.shields.io/badge/Asterisk-F67819?style=for-the-badge&logo=asterisk&logoColor=white)
+![FreePBX](https://img.shields.io/badge/FreePBX-EE0000?style=for-the-badge&logoColor=white)
+![SIP](https://img.shields.io/badge/SIP_Protocol-00d4ff?style=for-the-badge&logoColor=white)
+![RTP](https://img.shields.io/badge/RTP%2FSRTP-0077B5?style=for-the-badge&logoColor=white)
+![Kamailio](https://img.shields.io/badge/Kamailio-003366?style=for-the-badge&logoColor=white)
+
+**🐧 OS & Infrastructure**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![SSH](https://img.shields.io/badge/SSH-4D4D4D?style=for-the-badge&logo=openssh&logoColor=white)
+
+**☁️ Cloud & Virtualization**
+
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![OpenStack](https://img.shields.io/badge/OpenStack-ED1944?style=for-the-badge&logo=openstack&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=for-the-badge&logo=vmware&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+**📊 Monitoring & Observability**
+
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-CC0000?style=for-the-badge&logoColor=white)
+![Loki](https://img.shields.io/badge/Grafana_Loki-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
+**⚙️ Automation & Dev**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+## `$ systemctl list-units --focus`
+
+```
+UNIT                              STATUS     DESCRIPTION
+─────────────────────────────────────────────────────────────────────
+infrastructure-automation.service ● running  IaC · CI/CD · Scripted Provisioning
+voip-platforms.service            ● running  Asterisk · FreePBX · SIP Trunking · IVR
+linux-engineering.service         ● running  Hardening · Tuning · Production Servers
+monitoring-observability.service  ● running  Prometheus · Grafana · Loki · Zabbix
+cloud-deployments.service         ● running  AWS · OpenStack · Multi-zone · Autoscaling
+ai-integrations.service           ● running  RAG Pipelines · AI Agents · LLM Tooling
+```
+
+---
+
+## `$ git log --all --stat`
+
+<div align="center">
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Mkali10&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050a0f&title_color=00d4ff&icon_color=00ff9d&text_color=a0c4d8&border_radius=8" />
+&nbsp;
+<img width="46%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mkali10&layout=compact&theme=tokyonight&hide_border=true&bg_color=050a0f&title_color=00d4ff&text_color=a0c4d8&border_radius=8" />
+
+<br/><br/>
+
+<img width="65%" src="https://streak-stats.demolab.com?user=Mkali10&theme=tokyonight&hide_border=true&background=050a0f&ring=00d4ff&fire=ff6b35&currStreakLabel=00ff9d&sideLabels=a0c4d8&dates=5a8aaa&border_radius=8" />
+
+</div>
+
+---
+
+## `$ tail -f /var/log/activity.log`
+
+<div align="center">
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Mkali10&theme=tokyo-night&hide_border=true&bg_color=050a0f&color=00d4ff&line=00ff9d&point=ff6b35&area=true&area_color=00d4ff" />
+</div>
+
+---
+
+## `$ ping -c 1 connect`
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ankitvishwa)
+&nbsp;&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mkali10)
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff9d,50:00d4ff,100:050a0f&height=130&section=footer&text=Building+reliable+infrastructure+%26+scalable+systems&fontSize=13&fontColor=a0d8ef&fontAlignY=60&animation=fadeIn&fontFamily=monospace" />
+
+</div>
