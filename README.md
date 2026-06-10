@@ -136,3 +136,9 @@ ai-integrations.service            ● running  RAG Pipelines · AI Agents · LL
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff9d,50:00e5ff,100:020c14&height=130&section=footer&text=Building+reliable+infrastructure+%26+scalable+systems&fontSize=13&fontColor=a0d8ef&fontAlignY=55&animation=fadeIn&fontFamily=monospace" width="100%"/>
 
 </div>
+
+
+## Featured Projects
+- [SMAI — Enterprise AI Calling Platform](https://github.com/ankitvishwasmarttech-sudo/SMAI)
+  > Native WebSocket voice AI · FreeSWITCH · OpenAI Realtime · Sub-500ms latency
+
